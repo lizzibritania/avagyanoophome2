@@ -43,8 +43,8 @@ public class Container {
     }
 
     boolean collides(Ball ball)
-    {if (((ball.getX()+ball.getRadius())>=x1)&&((ball.getX()+ball.getRadius())<=x2)
-            &&((ball.getY()+ball.getRadius())<=y1)&&((ball.getY()+ball.getRadius())>=y2))
+    {if (((ball.getX()+ball.getRadius())<=x1)&&((ball.getX()-ball.getRadius())>=x2)
+            &&((ball.getY()+ball.getRadius())<=y1)&&((ball.getY()-ball.getRadius())>=y2))
     {return true;}
         else
             return false;
